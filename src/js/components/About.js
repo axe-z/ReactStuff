@@ -23,7 +23,11 @@ const { render, findDOMNode  } = ReactDOM;
 
 const About = (props) =>  {
    return (
-       <h3>About component</h3>
+     <div>
+       <h3>About</h3>
+       <p>Bienvenue sur la page a propos de nous</p>
+     </div>
+
    )
  }
 
