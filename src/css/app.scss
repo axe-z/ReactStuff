@@ -1,0 +1,251 @@
+@font-face {
+  font-family: 'Nexa';
+  src: url('./../fonts/NexaBlack.otf');
+  src: url('./../fonts/NexaRegular.otf');
+  src: url('./../fonts/NexaThin.otf');
+}
+$color-blue: rgb(12, 39, 64);
+$color-blue2: rgb(24, 67, 107);
+
+
+html {
+  background: $color-blue;
+  font-family: "NexaRegular";
+}
+
+body {
+  width: 1280px;
+  margin: 0 auto;
+  padding-left: 25px;
+  opacity: 1;
+  color: white;
+  font-size: 120%;
+  // display: none;
+ font-family: "NexaRegular";
+// webkit-text-stroke:1px transparent;
+ font-weight: 100;
+ -webkit-font-smoothing: subpixel-antialiased;
+background: $color-blue;
+}
+
+.wrapper {
+  position: relative;
+  top: 0;
+  width: 1400px;
+  height: 400vh;
+}
+
+h1,h2 {
+    color: white;
+//  font-family: 'NexaBlack';
+  font-weight: 900;
+}
+h3,h4,h5 {
+//  font-family: 'NexaRegular';
+  color:white;
+  letter-spacing: 3px;
+}
+h2{
+  font-size: 16px;
+
+}
+
+code {
+  position: relative;
+  display: block;
+  color: white;
+  line-height: 1.7;
+  padding: 10px;
+  background: $color-blue2;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+img {
+  margin: 0;
+  max-width: 100%;
+  margin: 20px 0px;
+}
+.section, .section2, .section3 {
+  margin-top: 60px;
+  width: 90vw;
+}
+.section:first-of-type {
+  margin-top: 10px;
+
+}
+.section2:first-of-type {
+  margin-top: 10px;
+
+}
+.section3:first-of-type {
+  margin-top: 10px;
+
+}
+pre {
+  width: 1360px;
+  background: $color-blue2;
+}
+
+li {
+  //font-family: 'NexaBlack';
+  line-height: 2;
+  color: black;
+    font-size: 120%;
+  max-width: 1360px;
+  list-style: none;
+}
+h4 {
+  line-height: 1.8;
+  color: rgb(3, 106, 163);
+  font-size: 110%;
+}
+
+.sec2 {
+  width: 300px;
+  height: 150px;
+  background:rgb(215, 215, 215);
+}
+
+
+a {
+  position: relative;
+  top: -5px;
+  display: inline-block;
+  background: white;
+  padding: 8px 10px;
+  width: 110px;
+  height: 25px;
+  text-align: center;
+  list-style: none;
+  line-height: 30px;
+  margin: 0 15px;
+  font-weight: 900;
+  letter-spacing: 8px;
+  color: grey;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all .5s ease-in;
+  z-index: 2;
+}
+a:hover {
+  background: rgba(121, 121, 121,.4);
+  color: white;
+  letter-spacing: 12px;
+  transition: all .4s ease-in;
+}
+
+input[type='text']{
+ width: 300px;
+ height: 50px;
+ line-height: 50px;
+}
+
+.section {
+  position: relative;
+}
+
+.section h4 {
+    font-weight: 700;
+  //  font-family: 'Nexa';
+}
+h1 {
+  //  font-family: 'Nexa';
+    font-weight: 900;
+      font-size: 26px;
+}
+li {
+  font-size: 18px;
+  color:rgb(236, 236, 236)
+}
+
+.section li:last-of-type {
+  margin-bottom: 30px;
+
+}
+.section li {
+//    font-family: 'Nexa';
+    letter-spacing: 1px;
+}
+.section code{
+    /*font-family: 'Avenir';*/
+      font-size: 17px;
+}
+.section h2 span {
+  font-weight: bold;
+  color: steelblue;
+}
+.section span {
+  font-weight: bold;
+
+}
+.section code{
+  font-size: 18px;
+    margin-bottom: 160px;
+}
+
+
+.section h2 {
+//  font-family: 'Nexa';
+  letter-spacing: 8px;
+  font-feature-settings: normal;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  font-weight: 600;
+  padding: 30px;
+  min-width: 1280px;
+  max-width: 1400px;
+  margin-right: 12%;
+  color: white;
+  padding-bottom: 26px;
+  background: -webkit-linear-gradient(left, $color-blue2 0%,$color-blue 100%); /* Chrome10-25,Safari5.1-6 */
+}
+
+.section h2:after {
+  content: "|   | React, les infos part II";
+  color: rgba(255, 255, 255, 0.59);
+  position: relative;
+  top: -2px;
+  font-size: 11px;
+  line-height: 2em;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+progress {
+	width: 80%;
+	height: 20px;
+	-webkit-appearance: none;
+}
+progress::-webkit-progress-bar {
+	background: lightgray;
+	border-radius: 50px;
+	border:1px solid gray;
+}
+progress::-webkit-progress-value {
+	background: #31C6F7;
+	border-radius: 50px;
+}
+
+a {
+  margin: 0;
+  width: 300px;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 10px;;
+  &:hover {
+    width: 300px;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 10px;;
+  }
+}
+
+
+@import "deux.scss";
+
+
+.notes {
+  margin-top: 500px;
+}
