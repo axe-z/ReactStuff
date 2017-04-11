@@ -13,7 +13,7 @@ const { render, findDOMNode  } = ReactDOM;
   render() {
     return (
        <div>
-         <h3>Examples component!</h3>
+         <h3>Examples</h3>
          <p>Bienvenue</p>
        </div>
     )
