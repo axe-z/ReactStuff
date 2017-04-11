@@ -5,12 +5,13 @@
   "main": "build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server",
+    "startdev": "http-server",
     "dev": "lite-server --baseDir='build'",
     "wp": "webpack -d --watch",
     "wpprod": "webpack -p --watch",
     "webpack": "webpack-dev-server --watch --progress --colors",
-    "wpserver": "webpack-dev-server --watch"
+    "wpserver": "webpack-dev-server --watch",
+    "start": "node server.js"
   },
   "author": "Brice Wilson",
   "license": "ISC",
