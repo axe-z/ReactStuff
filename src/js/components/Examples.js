@@ -12,9 +12,10 @@ const { render, findDOMNode  } = ReactDOM;
    },
   render() {
     return (
-
-        <h3>Examples component!</h3>
-
+       <div>
+         <h3>Examples component!</h3>
+         <p>Bienvenue</p>
+       </div>
     )
   }
 });
