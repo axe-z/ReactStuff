@@ -80,7 +80,7 @@ const { Component } = React
 //import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import _ from 'lodash';
-require('bootstrap-sass')
+ require('bootstrap-sass')
 
 
 //=================================================================================================================================
@@ -93,7 +93,6 @@ import Weather from './components/Weather'
 import About from './components/About'
 import Examples from './components/Examples'
 import { Perdu } from './components/Whoops404'
-
 
 
 render (
