@@ -200,3 +200,25 @@ body {
     .weather button.submit:hover {
       background-color: #fafafa !important;
       letter-spacing: 3px; }
+
+.form-row {
+  position: relative;
+  display: inline; }
+
+.search {
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  padding-left: 10px; }
+
+.but {
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  margin-left: 20px;
+  background: black;
+  border: none;
+  border-radius: 5px;
+  color: white; }

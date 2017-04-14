@@ -11,6 +11,7 @@ let style = {
 const Nav = React.createClass({
   onSearch(e){
     e.preventDefault()
+
   },
   render() {
     return (
@@ -20,13 +21,11 @@ const Nav = React.createClass({
         <IndexLink to="/" className ="link" activeClassName ="active" activeStyle={style}>GET WEATHER</IndexLink>
         <Link to="/about" className ="link" activeClassName ="active" activeStyle={style}>ABOUT</Link>
         <Link to="/examples" className ="link" activeClassName ="active" activeStyle={style}>EXAMPLES</Link>
-        <form onSubmit={this.onSearch}>
-          <br />      <br />
-          <input type="search" placeholder='recherche la temperature'/>
+        <form onSubmit={this.onSearch} className="form-row">
 
-          <br />      <br />
-            <input type="submit" className ="link" placeholder='obtenir la temperature'/>
+          <input type="search" className="search" placeholder='recherche la temperature'/>
 
+          <button type="submit" className ="but" >ENVOYER</button>
         </form>
         {/* <a href="#/about"  className="link">A Link</a> */}
       </div>

@@ -35,11 +35,11 @@ import TweenMax from '../../node_modules/gsap/src/minified/TweenMax.min.js';
 
 ///AMELIORE LE LOOK DU RELOAD
 let body = $('body');
-TweenMax.set(body, {
-  x: 150,
-  // scale: 1.5,
-  opacity: 0,
-});
+// TweenMax.set(body, {
+//   x: 150,
+//   // scale: 1.5,
+//   opacity: 0,
+// });
 
 TweenMax.set($('.notes'), {
   x: 0,
@@ -48,12 +48,12 @@ TweenMax.set($('.notes'), {
 });
 
 
-TweenMax.to(body, 2, {
-    x: 0,
-    // scale: 1,
-  opacity: 1,
-  ease: Power4.easeOut
-});
+// TweenMax.to(body, 2, {
+//     x: 0,
+//     // scale: 1,
+//   opacity: 1,
+//   ease: Power4.easeOut
+// });
 TweenMax.to($('.notes'), 2, {
     x: 0,
     // scale: 1,
