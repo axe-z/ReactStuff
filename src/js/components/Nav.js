@@ -11,7 +11,13 @@ let style = {
 const Nav = React.createClass({
   onSearch(e){
     e.preventDefault()
+   let location = this.refs.search.value;
+   let locationEncode = encodeURIComponent(location);
 
+   if(location){
+     this.refs.search.value = ''
+     window.location.hash = '#/?location='+ locationEncode
+   }
   },
   render() {
     return (
@@ -23,7 +29,7 @@ const Nav = React.createClass({
         <Link to="/examples" className ="link" activeClassName ="active" activeStyle={style}>EXAMPLES</Link>
         <form onSubmit={this.onSearch} className="form-row">
 
-          <input type="search" className="search" placeholder='recherche la temperature'/>
+          <input type="search" className="search" ref="search" placeholder='recherche la temperature'/>
 
           <button type="submit" className ="but" >ENVOYER</button>
         </form>

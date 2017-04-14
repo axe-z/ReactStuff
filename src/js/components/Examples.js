@@ -16,7 +16,7 @@ import { Link, IndexLink } from 'react-router'
      })
 
      arr.forEach(function (item, i){
-      console.log(item + ' ' + i)
+    //  console.log(item + ' ' + i)
      })
 
      TweenMax.from(list,2,{

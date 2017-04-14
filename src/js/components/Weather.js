@@ -12,6 +12,7 @@ import ErrorModal from './ErrorModal';
  const Weather = React.createClass({
    getInitialState(){
      return {
+
      isLoading: false,
      errorMessage: false
      }
@@ -25,11 +26,18 @@ import ErrorModal from './ErrorModal';
        opacity: 0,  x:  20,  scale: 1.5,
        ease: Power4.easeInOut
      })
+     let location = this.props.location.query.location  //regarde dans l url pour voir une ville, ce que exemple fait
 
+     if(location && location.length > 0){
+       this.handleSearch(location)  //lance l app avec la location dans l url
+       window.location.hash = '#/'  //remet a zero l url
+     }
    },
    handleSearch(location){
     location = _.capitalize(location); //formater cute. ajuste tous les lettres sauf 1ere maj.
     this.setState({
+      location: undefined,
+       temp: undefined,
       isLoading : true,
       errorMessage: false
     })
@@ -50,6 +58,14 @@ import ErrorModal from './ErrorModal';
          errorMessage: true,  //CA MARCHE MIEUX DE MEME, NE CHANGE PAS
        })
     })
+   },
+   componentWillReceiveProps(urlduNav){ ///va regarder l url transformer par le nav.
+     let location = urlduNav.location.query.location  //regarde dans l url pour voir une ville, ce que exemple fait
+
+     if(location && location.length > 0){
+       this.handleSearch(location)  //lance l app avec la location dans l url
+       window.location.hash = '#/'  //remet a zero l url
+     }
    },
 render() {
     let {isLoading, temp, location, errorMessage} = this.state //destructurer, plus facile apres.
